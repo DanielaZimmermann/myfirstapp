@@ -1,0 +1,25 @@
+
+
+<div class="container">
+  <p id="notice"><%= notice %></p>
+
+  <h1>Products</h1>
+
+  <% @products.in_groups_of(3, false).each do |group| %>
+    <div class="row">
+      <% group.each do |product| %>
+        <div class = "col-md-4 col-xs-12">
+          <!--img src="https://unsplash.it/355x250/?bike" class="img-responsive" alt="portfolio project"-->
+          <%= link_to image_tag(product.image_url, class: "img-responsive"), product %>
+          <h3><%= product.name %></h3>
+          <span class="detail"><%= link_to 'Show', product %></span>
+          <span class="detail"><%= link_to 'Edit', edit_product_path(product) %></span>
+          <span class="detail"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+        </div><!-- /column -->
+      <% end %>
+    </div><!-- /row -->
+  <% end %>
+</div><!-- /container -->
+<br>
+
+<%= link_to 'New Product', new_product_path %>

@@ -1,0 +1,23 @@
+
+
+<div class="container">
+	<p id="notice"><%= notice %></p>
+
+    <div class="row">
+          <div class = "col-md-12 col-xs-12">
+            <!--img src="https://unsplash.it/355x250/?bike" class="img-responsive" alt="portfolio project"-->
+            <%= image_tag(@product.image_url, class: "img-responsive detail") %>
+            <h3 class="detail"><%= @product.name %></h3>
+            <h5 class="detail">Brand XYZ</h5>
+            <h5 class="detail">200 Eur</h5>
+            <h5 class="detail">5 colors</h5>
+            <p class="detail"><%= @product.description %></p>
+          </div>
+      </div>
+    </div>
+    <%= link_to 'Edit', edit_product_path(@product) %> |
+    <%= link_to 'Back', products_path %>
+</div><!-- /container -->
+
+
+

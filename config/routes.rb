@@ -1,6 +1,7 @@
 
 
 Rails.application.routes.draw do
+  resources :products
 	#root 'static_pages#index'
   root 'static_pages#index'
 
