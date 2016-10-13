@@ -9,8 +9,8 @@
             <%= image_tag(@product.image_url, class: "img-responsive detail") %>
             <h3 class="detail"><%= @product.name %></h3>
             <h5 class="detail">Brand XYZ</h5>
-            <h5 class="detail">200 Eur</h5>
-            <h5 class="detail">5 colors</h5>
+            <h5 class="detail"><%= @product.price %> Eur</h5>
+            <h5 class="detail"><%= @product.colour %></h5>
             <p class="detail"><%= @product.description %></p>
           </div>
       </div>
