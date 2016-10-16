@@ -35,7 +35,7 @@
 h1, h2 {
 	color: #333;
 	font-family: "Playfair Display",serif;
-	display: inline;
+	display: block;
 }
 
 // home 
@@ -63,4 +63,13 @@ h1, h2 {
 
 .contact ul{
 	list-style-type: none;
+}
+
+// landing page
+.carousel {
+	margin: auto;
+}
+
+.carousel-caption {
+	padding-bottom: 60px;
 }

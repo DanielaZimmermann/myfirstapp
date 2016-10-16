@@ -1,3 +1,32 @@
-<h2>Featured Product:</h2>
-<h5><%= @featured_product.name %></h5>
-<%= link_to image_tag(@featured_product.image_url, class: "img-responsive"), @featured_product %>
+<h2>Featured Products:</h2>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <% @products.each_with_index do |product, index| %>
+       <li data-target="#carousel-example-generic" data-slide-to="<%=index%>" class="<%= " active" if product == @products.first %>"></li>
+    <% end %>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <% @products.each do |product| %>
+       <div class="item<%= " active" if product == @products.first %>">
+       	<% url_big_image = product.image_url.sub(/355x250/, '1920x1280') %>
+	       <%= image_tag(url_big_image, class: "img-responsive carousel") %>
+	       <div class="carousel-caption">
+	         <%= product.name %>
+	        </div>
+        </div>
+    <% end %>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>

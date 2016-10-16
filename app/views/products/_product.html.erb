@@ -1,0 +1,12 @@
+
+
+<div class="col-sm-2 col-md-4">
+  <!--img src="https://source.unsplash.com/355x250/?bike" class="img-responsive" alt="portfolio project"-->
+  <%= link_to image_tag(product.image_url, class: "img-responsive"), product %>
+  <h3><%= product.name %></h3>
+  <h5><%= product.price %> Eur</h5>
+  <h5><%= product.colour %></h5>
+  <span class="detail"><%= link_to 'Show', product %></span>
+  <span class="detail"><%= link_to 'Edit', edit_product_path(product) %></span>
+  <span class="detail"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+</div><!-- /col -->
