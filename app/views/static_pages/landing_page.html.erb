@@ -3,7 +3,7 @@
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <% @products.each_with_index do |product, index| %>
-       <li data-target="#carousel-example-generic" data-slide-to="<%=index%>" class="<%= " active" if product == @products.first %>"></li>
+       <li data-target="#carousel-example-generic" data-slide-to="<%=index%>" class=<%= " active" if index == 0 %>></li>
     <% end %>
   </ol>
 
@@ -11,7 +11,7 @@
   <div class="carousel-inner" role="listbox">
     <% @products.each do |product| %>
        <div class="item<%= " active" if product == @products.first %>">
-       	<% url_big_image = product.image_url.sub(/355x250/, '1920x1280') %>
+       	<% url_big_image = product.image_url.sub(/355x250/, '1920x800') %>
 	       <%= image_tag(url_big_image, class: "img-responsive carousel") %>
 	       <div class="carousel-caption">
 	         <%= product.name %>
