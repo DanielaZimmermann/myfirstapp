@@ -4,15 +4,16 @@
 	<p id="notice"><%= notice %></p>
 
     <div class="row">
-          <div class = "col-md-12 col-xs-12">
-            <!--img src="https://unsplash.it/355x250/?bike" class="img-responsive" alt="portfolio project"-->
-            <%= image_tag(@product.image_url, class: "img-responsive detail") %>
-            <h3 class="detail"><%= @product.name %></h3>
-            <h5 class="detail">Brand XYZ</h5>
-            <h5 class="detail"><%= @product.price %> Eur</h5>
-            <h5 class="detail"><%= @product.colour %></h5>
-            <p class="detail"><%= @product.description %></p>
-          </div>
+      <div class="col-md-12 col-xs-12">
+        <!--img src="https://unsplash.it/355x250/?bike" class="img-responsive" alt="portfolio project"-->
+        <%= image_tag(@product.image_url, class: "img-responsive detail") %>
+        <div class="detail">
+          <h3><%= @product.name %></h3>
+          <h5>Brand XYZ</h5>
+          <h5><%= @product.price %> Eur</h5>
+          <h5><%= @product.colour %></h5>
+          <p><%= @product.description %></p>
+        </div>
       </div>
     </div>
     <%= link_to 'Edit', edit_product_path(@product) %> |

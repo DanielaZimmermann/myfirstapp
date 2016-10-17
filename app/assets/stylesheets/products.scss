@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.detail {
+.detail, .detail h3, .detail h5, .detail p {
 	display: block;
 	margin: auto;
 	width: 50%;
@@ -10,8 +10,4 @@
 
 h3, h5, p, .detail {
 	text-align: center;
-}
-
-span .detail {
-	margin: auto; 
 }
