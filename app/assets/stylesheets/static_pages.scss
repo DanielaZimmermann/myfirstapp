@@ -70,6 +70,20 @@ h1, h2 {
 	margin: auto;
 }
 
-.carousel-caption {
-	padding-bottom: 60px;
+.carousel-caption h1 {
+	padding-bottom: 18%;
+	font-family: "Playfair Display",serif;
+	text-shadow: none;
+	font-size: 10em;
+	color: #fff;
+}
+
+.carousel-caption span {
+	display: block;
+	font-size: .3em;
+}
+.header-landing-page {
+	padding: 15px; 
+	background-color: rgba(0, 0, 0, 0.4);
+	display: inline-block;
 }

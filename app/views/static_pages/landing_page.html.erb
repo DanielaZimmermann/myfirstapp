@@ -1,4 +1,4 @@
-<h2>Featured Products:</h2>
+
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -10,13 +10,18 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <% @products.each do |product| %>
-       <div class="item<%= " active" if product == @products.first %>">
+      <div class="item<%= " active" if product == @products.first %>">
        	<% url_big_image = product.image_url.sub(/355x250/, '1920x800') %>
-	       <%= image_tag(url_big_image, class: "img-responsive carousel") %>
-	       <div class="carousel-caption">
-	         <%= product.name %>
-	        </div>
+        <%= image_tag(url_big_image, class: "img-responsive carousel") %>
+	      <div class="carousel-caption">
+          <h1>
+            <div class="header-landing-page">
+            <span>&ndash; new in store &ndash;</span>
+            <%= product.name %>
+	          </div>
+          </h1>
         </div>
+      </div>
     <% end %>
   </div>
 

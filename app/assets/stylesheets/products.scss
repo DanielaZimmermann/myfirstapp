@@ -11,3 +11,98 @@
 h3, h5, p, .detail {
 	text-align: center;
 }
+
+// overview product
+
+.btn-create{
+	position: absolute;
+	font-size: 1em;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	border-style: solid;
+	bottom: -70px;
+	border-width: 1px;
+	padding: 10px;
+	right: 37px;
+}
+
+.overview-detail h3,
+.overview-detail h5,
+.overview-detail p,{
+	font-family: Lato, Futura, 'Trebuchet MS', Arial, sans-serif;
+	color: #333;
+
+}
+
+.overview-detail h3{
+	font-size: 1.8em;
+	font-weight: 400;
+	margin-bottom: 5px 0px;
+}
+
+.overview-detail h5{
+	margin: 0px;
+}
+
+.overview-detail-links{
+	text-align: center;
+	margin: 15px;
+}
+
+.overview-detail-links span{
+		border-style: solid;
+		border-width: 1px;
+		padding: 2px;
+		border-color: #5f5f5f;
+		background: #F8F8F8;
+		margin-left: 5px;
+}
+
+.overview-detail-links a{
+	text-decoration: none;
+}
+// show product
+img.detail {
+	width: 100%;
+}
+
+.grid-description-detail{
+	padding-left: 15px;
+}
+
+.description-detail{
+	background: #F8F8F8;
+	padding: 5%;
+}
+
+.description-detail h3, 
+.description-detail h5
+.description-detail p {
+	font-family: Lato, Futura, 'Trebuchet MS', Arial, sans-serif;
+	color: #333;
+}
+
+.description-detail h3{
+	font-size: 1.8em;
+	font-weight: 400;
+	margin-bottom: 40px;
+}
+
+.description-detail h5{
+	margin: 0px;
+}
+
+.description-detail p{
+	text-align: left;
+	color: #737373;
+}
+
+// edit product
+
+.container-edit-form{
+	margin-left: 30%;
+}
+
+input, textarea{
+	width: 40%;
+}

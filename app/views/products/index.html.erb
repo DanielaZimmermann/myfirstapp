@@ -3,10 +3,15 @@
 <div class="container">
   <p id="notice"><%= notice %></p>
 
-  <h1>Products</h1>
+  <div class="row">
+    <div class="col-md-10 col-xs-10">
+      <h1>OUR PRODUCTS</h1>
+    </div>
+    <div class="col-md-2 col-xs-2">
+      <span class="btn-create"><%= link_to 'NEW PRODUCT', new_product_path %></span>
+    </div>
 
   <%= render @products %>
 </div><!-- /container -->
 <br>
 
-<%= link_to 'New Product', new_product_path %>

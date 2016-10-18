@@ -2,13 +2,16 @@
 
 <div class="col-sm-2 col-md-4">
   <!--img src="https://source.unsplash.com/355x250/?bike" class="img-responsive" alt="portfolio project"-->
-  <%= link_to image_tag(product.image_url, class: "img-responsive"), product %>
-	  <h3><%= product.name %></h3>
-	  <h5><%= product.price %> Eur</h5>
-	  <h5><%= product.colour %></h5>
-	  <div class="detail">
-		  <span><%= link_to 'Show', product %></span>
-		  <span><%= link_to 'Edit', edit_product_path(product) %></span>
-		  <span><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></span>
-  </div>
+  <%= link_to image_tag(product.image_url, class: "img-responsive hover-image"), product %>
+  	<div class="overview-detail">
+		  <h3><%= product.name %></h3>
+		  <h5><%= product.price %> Eur</h5>
+		  <h5><%= product.colour %></h5>
+
+		  <div class="overview-detail-links">
+			  <span><%= link_to 'Show', product %></span>
+			  <span><%= link_to 'Edit', edit_product_path(product) %></span>
+			  <span><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+	  	</div>
+  	</div>
 </div><!-- /col -->
