@@ -3,3 +3,14 @@
 <%= render 'form', product: @product %>
 
 <%= link_to 'Back', products_path %>
+
+
+
+<%= link_to "Edit product with id 3", edit_product_path(3) %>
+<%= link_to "New product", new_product_path %>
+<%= link_to "Show all products", products_path %>
+
+<%= link_to 'Show product id 3', product_path(3) %>
+<%= link_to 'Contact Page', static_pages_contact_path %>
+<%= link_to 'Edit this product' edit_product_path(@product) %>
+<%= link_to 'Show this product', product_path(@product) %>
