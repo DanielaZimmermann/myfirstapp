@@ -26,8 +26,16 @@
           <a class="navbar-brand" href="/static_pages/landing_page">bikeffm °</a>
         </div>
 
+
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <%= form_tag("/products", method: "get", class: "navbar-form navbar-left", role: "search") do %>
+            <div class="form-group">
+              <%= label_tag(:q, "Search for:", class: "sr-only") %>
+              <%= text_field_tag(:q, nil, class: "form-control", placeholder: "Search") %>
+            </div>
+            <%= button_tag("Go", class: "btn btn-default btn-default-transparent") %>
+          <% end %>
           <ul class="nav navbar-nav navbar-right">
             <li><a href=<%= products_path %>>PRODUCTS</a></li>
             <li><a href=<%= static_pages_about_path %>>ABOUT</a></li>

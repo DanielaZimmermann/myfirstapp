@@ -3,7 +3,6 @@ class StaticPagesController < ApplicationController
 	require 'json'
 
   def index
-  	redirect_to static_pages_landing_page_path
   end
 
   def landing_page
@@ -12,7 +11,6 @@ class StaticPagesController < ApplicationController
   end
 
   def contact
-  	redirect_to :back
   end
 end
 

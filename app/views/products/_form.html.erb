@@ -1,6 +1,6 @@
 <div class="container">
   <div class="container-edit-form">
-    <%= form_for(product) do |f| %>
+    <%= form_for(product, :html => {class: "form-horizontal"}) do |f| %>
       <% if product.errors.any? %>
         <div id="error_explanation">
           <h2><%= pluralize(product.errors.count, "error") %> prohibited this product from being saved:</h2>
@@ -13,28 +13,28 @@
         </div>
       <% end %>
 
-      <div class="field">
-        <%= f.label :name %>
-        <%= f.text_field :name %>
+      <div class="form-group">
+        <%= f.label :name, class: "control-label col-sm-2 col-sm-offset-2" %>
+        <%= f.text_field :name, class: "form-control col-sm-8" %>
       </div>
 
-      <div class="field">
-        <%= f.label :description %>
-        <%= f.text_area :description %>
+      <div class="form-group">
+        <%= f.label :description, class: "control-label col-sm-2 col-sm-offset-2" %>
+        <%= f.text_area :description, class: "form-control col-sm-8" %>
       </div>
 
-      <div class="field">
+      <div class="form-group">
         <%= f.label :image_url %>
         <%= f.text_field :image_url %>
       </div>
 
-        <div class="field">
-        <%= f.label :colour %><br>
+       <div class="form-group">
+        <%= f.label :colour %>
         <%= f.text_field :colour %>
       </div>
 
-      <div class="field">
-        <%= f.label :price %><br>
+      <div class="form-group">
+        <%= f.label :price %>
         <%= f.text_field :price %>
       </div>
 

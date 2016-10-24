@@ -14,3 +14,25 @@
  *= require_self
  */
 
+
+.navbar-form {
+	margin-top: 13px;
+}
+
+.btn {
+	border-radius: 0px;
+}
+
+.form-control {
+	border-radius: 0px;
+}
+
+.btn-default-transparent {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+}
+
+form div.control-label, form div.form-horizontal {
+	margin-top: 10px;
+}

@@ -100,9 +100,16 @@ img.detail {
 // edit product
 
 .container-edit-form{
-	margin-left: 30%;
+	text-align: center;
 }
 
 input, textarea{
 	width: 40%;
+}
+
+// new product
+
+.form-headline {
+	text-align: center;
+	margin-bottom: 25px;
 }
