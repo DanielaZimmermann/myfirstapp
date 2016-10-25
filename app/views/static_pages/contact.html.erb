@@ -1,33 +1,34 @@
 <div class="container-fluid">
 	<div class="jumbotron contact">
-		<h1>CONTACT US</h1>
-		<ul>
-			<li>Frankfurt Bikes</li>
-			<li>Big Street 99</li>
-			<li>445544 Frankfurt</li>
-			<li>Email: hello@frankfurtbikes.de</li>
-		</ul>
 
-		<%= flash[:notice] %>
 
 		<%= form_tag("/static_pages/thank_you") do %>
-		<div class="row">
-		  <div class="col-md-4">
-		    <div class="form-group">
-		      <%= label_tag :name %>
-		      <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
-		    </div>      
-		    <div class="form-group">
-		      <%= label_tag :email, "Email Address" %>
-		      <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
-		    </div>
-		    <div class="form-group">
-		      <%= label_tag :message %>
-		      <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
-		    </div>      
-		  </div>
-		</div>
-		<%= submit_tag "Send" %>   
+			<div class="row">
+			  <div class="col-md-5 col-sd-12 contact-content">
+			  <h1>CONTACT US</h1>
+
+			  <%= flash[:notice] %>
+			    <div class="form-group">
+			      <%= label_tag :name %>
+			      <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
+			    </div>      
+			    <div class="form-group">
+			      <%= label_tag :email, "Email Address" %>
+			      <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
+			    </div>
+			    <div class="form-group">
+			      <%= label_tag :message %>
+			      <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
+			    </div>  
+			    <%= submit_tag("Send", class: "btn btn-warning") %>  
+			    <ul>
+			    	<li>Frankfurt Bikes</li>
+			    	<li>Big Street 99</li>
+			    	<li>445544 Frankfurt</li>
+			    	<li>Email: hello@frankfurtbikes.de</li>
+			    </ul>   
+			  </div>
+			</div>
 		<% end %>
 	</div> <!-- /jumbotron contact -->
 </div> <!-- /container-fluid -->
