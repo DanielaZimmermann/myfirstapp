@@ -1,0 +1,5 @@
+<div class="panel panel-default">
+  <div class="panel-body">
+    <p>Thank you. We have received your message and will respond as soon as possible.</p>
+  </div><!-- / panel-body -->
+</div><!-- / panel -->
