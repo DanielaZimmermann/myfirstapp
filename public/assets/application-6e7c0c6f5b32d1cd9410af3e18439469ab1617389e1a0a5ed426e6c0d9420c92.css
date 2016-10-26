@@ -1,0 +1,436 @@
+/* line 5, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/products.scss */
+.detail, .detail h3, .detail h5, .detail p {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+/* line 11, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/products.scss */
+h3, h5, p, .detail {
+  text-align: center;
+}
+
+/* line 17, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/products.scss */
+.btn-create {
+  position: absolute;
+  font-size: 1em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-style: solid;
+  bottom: -70px;
+  border-width: 1px;
+  padding: 10px;
+  right: 37px;
+}
+
+/* line 29, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/products.scss */
+.overview-detail h3,
+.overview-detail h5,
+.overview-detail p {
+  font-family: Lato, Futura, 'Trebuchet MS', Arial, sans-serif;
+  color: #333;
+}
+
+/* line 37, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/products.scss */
+.overview-detail h3 {
+  font-size: 1.8em;
+  font-weight: 400;
+  margin-bottom: 5px 0px;
+}
+
+/* line 43, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/products.scss */
+.overview-detail h5 {
+  margin: 0px;
+}
+
+/* line 47, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/products.scss */
+.overview-detail-links {
+  text-align: center;
+  margin: 15px;
+}
+
+/* line 52, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/products.scss */
+.overview-detail-links span {
+  border-style: solid;
+  border-width: 1px;
+  padding: 2px;
+  border-color: #5f5f5f;
+  background: #F8F8F8;
+  margin-left: 5px;
+}
+
+/* line 61, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/products.scss */
+.overview-detail-links a {
+  text-decoration: none;
+}
+
+/* line 65, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/products.scss */
+img.detail {
+  width: 100%;
+}
+
+/* line 69, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/products.scss */
+.grid-description-detail {
+  padding-left: 15px;
+}
+
+/* line 73, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/products.scss */
+.description-detail {
+  background: #F8F8F8;
+  padding: 5%;
+}
+
+/* line 78, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/products.scss */
+.description-detail h3,
+.description-detail h5
+.description-detail p {
+  font-family: Lato, Futura, 'Trebuchet MS', Arial, sans-serif;
+  color: #333;
+}
+
+/* line 85, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/products.scss */
+.description-detail h3 {
+  font-size: 1.8em;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+/* line 91, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/products.scss */
+.description-detail h5 {
+  margin: 0px;
+}
+
+/* line 95, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/products.scss */
+.description-detail p {
+  text-align: left;
+  color: #737373;
+}
+
+/* line 102, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/products.scss */
+.container-edit-form {
+  text-align: center;
+}
+
+/* line 106, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/products.scss */
+input, textarea {
+  width: 40%;
+}
+
+/* line 112, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/products.scss */
+.form-headline {
+  text-align: center;
+  margin-bottom: 25px;
+}
+/* line 1, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 60px 0px 0px 0px;
+}
+
+/* line 10, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 17, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 23, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 26, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 30, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 36, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 40, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 47, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 52, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 56, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 62, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 70, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 81, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 87, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 5, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/static_pages.scss */
+.container-fluid {
+  padding: 0px;
+}
+
+/* line 10, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/static_pages.scss */
+.home {
+  background-image: url(/assets/bike_small-802b4791da9e98dc93fabd650b34727c9f2b93d9f895a3ff4ebffee0c2cae47a.png);
+}
+
+/* line 14, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/static_pages.scss */
+.background-home {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.4);
+  display: inline-block;
+}
+
+/* line 21, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/static_pages.scss */
+.about {
+  background-color: #DA8E79;
+  height: 100vh;
+}
+
+/* line 27, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/static_pages.scss */
+.contact {
+  background-color: #2F977A;
+  height: 100vh;
+}
+
+/* line 32, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/static_pages.scss */
+.contact ul {
+  list-style-type: none;
+}
+
+/* line 36, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/static_pages.scss */
+.contact-content {
+  left: 30%;
+}
+
+/* line 41, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/static_pages.scss */
+.carousel {
+  margin: auto;
+}
+
+/* line 45, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/static_pages.scss */
+.carousel-caption h1 {
+  padding-bottom: 18%;
+  font-family: "Playfair Display",serif;
+  text-shadow: none;
+  font-size: 10em;
+  color: #fff;
+}
+
+/* line 53, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/static_pages.scss */
+.carousel-caption span {
+  display: block;
+  font-size: .3em;
+}
+
+/* line 57, /Users/dz/Google Drive/careerfoundry/cf-5.4/myfirstapp/app/assets/stylesheets/static_pages.scss */
+.header-landing-page {
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: inline-block;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+/**************+**/
+/**** general ****/
+/*************+***/
+
+
+.container-fluid {
+	padding: 0px;
+}
+
+.navbar-default {
+  background-color: #795548;
+  border-style: none;
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a  {
+  color: #fff;
+  font: normal 700 10px/30px 'Lato', sans-serif;
+  font-family: Lato, Futura, 'Trebuchet MS', Arial, sans-serif;
+  letter-spacing: 3.6px;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  color: #FFC107;
+}
+
+.container-fluid .jumbotron{
+	border-radius: 0px;
+	height: 100vh;
+}
+
+h1, h2, h3 {
+	color: #333;
+	font-family: "Playfair Display",serif;
+	display: block;
+}
+
+.navbar-form {
+	margin-top: 13px;
+}
+
+.btn {
+	border-radius: 0px;
+}
+
+.form-control {
+	border-radius: 0px;
+}
+
+.btn-default-transparent {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+}
+
+/****************/
+/**** devise ****/
+/****************/
+
+.devise {
+  background-color: #EEEEEE;
+  height: 100vh;
+}
+
+.form-container-devise {
+  background-color: #ffc107;;
+  padding: 60px;
+  border-radius: 2px;
+}
+
+.form-container-devise input {
+  width: 100%;
+  border-color: white;
+  background-color: #ffc107;
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px;
+  color: #fff;
+}
+
+.form-container-devise label, 
+.form-container-devise em,
+.form-container-devise p {
+  display: inline-block;
+  color: #fff;
+}
+
+.form-container-devise i {
+  color: #fff;
+}
+
+.form-container-devise h2, 
+.form-container-devise h3 {
+  text-align: center;
+  margin-bottom: 1em;
+  margin-top: 0px;
+  color: #fff;
+}
+
+.form-container-devise h3 {
+  margin-top: 2em;
+  margin-bottom: 10px;
+}
+
+.form-container-devise span {
+  display: inline-block;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+.form-container-devise .field {
+  margin-bottom: 15px;
+}
+
+.form-container-devise input.btn-form-devise {
+  background-color: #009688;
+  color: #fff;
+  padding: 1em;
+  border-style: none;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
