@@ -1,5 +1,9 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user!
+  load_and_authorize_resource
+  # exception so everybody could access user show and index
+  #before_action :authenticate_user!, :except => [:show, :index]
 
   # GET /users
   # GET /users.json

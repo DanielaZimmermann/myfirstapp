@@ -51,9 +51,17 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container -->
     </nav>
+    <% if notice %>
+    <div class="alert alert-info" role="alert">
+      <p id="notice" class="alert alert-info"><%= notice %></p>
+    </div>
+    <% end %>
+    <% if alert %>
+    <div class="alert alert-danger" role="alert">
+      <p id="alert" class="alert alert-info"><%= alert %></p>
+    </div>
+    <% end %>
     <%= yield %>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
     <footer>
     	<h5>&copy; 2016 Bike Frankfurt</h5>
     </footer>
