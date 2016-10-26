@@ -82,6 +82,7 @@ h1, h2, h3 {
 .form-container-devise {
   background-color: #ffc107;;
   padding: 60px;
+  border-radius: 2px;
 }
 
 .form-container-devise input {
