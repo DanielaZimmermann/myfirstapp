@@ -40,11 +40,20 @@
             <li><a href=<%= products_path %>>PRODUCTS</a></li>
             <li><a href=<%= static_pages_about_path %>>ABOUT</a></li>
             <li><a href=<%= static_pages_contact_path %>>CONTACT</a></li>
+            <li>
+            <% if user_signed_in? %>
+              <%= link_to('LOGOUT', destroy_user_session_path, :method => :delete) %>
+            <% else %>
+              <%= link_to('LOGIN', new_user_session_path) %>
+            <% end %>
+            </li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container -->
     </nav>
     <%= yield %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <footer>
     	<h5>&copy; 2016 Bike Frankfurt</h5>
     </footer>
