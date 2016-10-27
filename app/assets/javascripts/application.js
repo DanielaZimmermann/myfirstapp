@@ -16,10 +16,9 @@
 //= require_tree .
 
 
-$( document ).ready(function() {
-  // fade out alerts
+$(document).on('turbolinks:load', function(){
+  console.log($(".alert"));
   $(".alert").delay(4000).fadeOut("slow");
 });
- 
 
 
