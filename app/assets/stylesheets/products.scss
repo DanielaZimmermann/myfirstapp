@@ -62,6 +62,12 @@ h3, h5, p, .detail {
 	text-decoration: none;
 }
 // show product
+
+.product {
+	padding-top: 5em;
+}
+
+
 img.detail {
 	width: 100%;
 }
@@ -97,6 +103,17 @@ img.detail {
 	color: #737373;
 }
 
+.thumbnail p {
+	margin: 10px;
+}
+
+.container-rating {
+	text-align: center;
+}
+
+.container-rating p{
+	margin: 10px;
+}
 // edit product
 
 .container-edit-form{
