@@ -64,7 +64,9 @@
       </div><!-- col -->
     </div><!-- row -->
 
+    <%= will_paginate @comments %>
     <%= render partial: "comments" %>
+    <%= will_paginate @comments %>
 
     <%= link_to 'Edit', edit_product_path(@product) %> |
     <%= link_to 'Back', products_path %>
