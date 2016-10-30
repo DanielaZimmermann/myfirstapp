@@ -14,6 +14,7 @@
               <h5>Brand XYZ</h5>
               <h5><%= @product.price %> Eur</h5>
               <h5><%= @product.colour %></h5>
+              <div class="rated" data-score="<%= @product.average_rating %>"></div>
               <p><%= @product.description %></p>
             </div>
           </div>
@@ -23,27 +24,28 @@
     <div class="row">
       <div class="col-md-6 col-xs-12">
         <h3>User Ratings</h3>
+        
         <%#= image_tag(@product.image_url, class: "img-responsive detail") %>
-        <div class="col-md-6 col-xs-12">
-            <div class="container-rating">
-              
-              <% @product.highest_rating_comment.rating.times do %>
-                <span class="glyphicon glyphicon glyphicon-star" aria-hidden="true"></span>
-              <% end %>
-              <h5>Good Product:</h5>
-              <p>"<%= @product.highest_rating_comment.body%>"</p>
-            </div>
-        </div>
-        <div class="col-md-6 col-xs-12">
-            <div class="container-rating">
-              <% @product.lowest_rating_comment.rating.times do %>
-                <span class="glyphicon glyphicon glyphicon-star" aria-hidden="true"></span>
-              <% end %>
-              <h5>Bad Product:</h5>
-              <p>"<%= @product.lowest_rating_comment.body%>"</p>
-            </div>
-        </div>
-      </div>
+        <div class="col-md-4 col-xs-12">
+          <div class="container-rating">
+            <div class="rated" data-score="<%= @product.highest_rating_comment.rating %>"></div>
+
+            <h5>Good Product:</h5>
+            <p>"<%= @product.highest_rating_comment.body%>"</p>
+          </div>
+        </div><!-- col -->
+        <div class="col-md-4 col-xs-12">
+          <div class="container-rating">
+            <div class="rated" data-score="<%= @product.lowest_rating_comment.rating %>"></div>
+
+            <h5>Bad Product:</h5>
+            <p>"<%= @product.lowest_rating_comment.body%>"</p>
+          </div>
+        </div><!-- col -->
+        <div class="col-md-4 col-xs-12">
+        <%= render partial: "new_comment" %>
+        </div><!-- col -->
+      </div><!-- col -->
       <div class="col-md-6 col-xs-12">
         <h3>Similar products</h3>
 
@@ -59,8 +61,11 @@
           </div>
         <% end %>
 
-      </div>
-    </div>
+      </div><!-- col -->
+    </div><!-- row -->
+
+    <%= render partial: "comments" %>
+
     <%= link_to 'Edit', edit_product_path(@product) %> |
     <%= link_to 'Back', products_path %>
 </div><!-- /container -->
