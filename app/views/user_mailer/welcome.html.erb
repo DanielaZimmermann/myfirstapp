@@ -1,0 +1,13 @@
+<table>
+  <tbody>
+    <tr>
+      <td><h2>Welcome!</h2></td>
+    </tr>
+    <tr>
+      <td><p>Thank you for signing up with <%= @appname %>!</p></td>
+    </tr>
+    <tr>
+      <td><p><strong>Your <%= @appname %> Team!</strong></p></td>
+    </tr>
+  </tbody>
+</table>

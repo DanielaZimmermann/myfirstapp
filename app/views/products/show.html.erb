@@ -5,6 +5,10 @@
       <div class="col-md-6 col-xs-12">
         <!--img src="https://unsplash.it/355x250/?bike" class="img-responsive" alt="portfolio project"-->
         <%= image_tag(@product.image_url, class: "img-responsive detail") %>
+        <% if signed_in? && current_user.admin? %>
+        <%= link_to 'Edit', edit_product_path(@product) %> |
+        <% end %>
+        <%= link_to 'Back', products_path %>
       </div>
       <div class="col-md-6 col-xs-12">
         <div class="grid-description-detail">
@@ -29,18 +33,16 @@
         <div class="col-md-4 col-xs-12">
           <div class="container-rating">
             <div class="rated" data-score="<%= @product.highest_rating_comment.rating %>"></div>
-
-            <h5>Good Product:</h5>
-            <p>"<%= @product.highest_rating_comment.body%>"</p>
+              <h5>Good Product:</h5>
+              <p>"<%= @product.highest_rating_comment.body%>"</p>
           </div>
         </div><!-- col -->
         <div class="col-md-4 col-xs-12">
           <div class="container-rating">
             <div class="rated" data-score="<%= @product.lowest_rating_comment.rating %>"></div>
-
-            <h5>Bad Product:</h5>
-            <p>"<%= @product.lowest_rating_comment.body%>"</p>
-          </div>
+              <h5>Bad Product:</h5>
+              <p>"<%= @product.lowest_rating_comment.body%>"</p>
+            </div>
         </div><!-- col -->
         <div class="col-md-4 col-xs-12">
         <%= render partial: "new_comment" %>
@@ -68,8 +70,6 @@
     <%= render partial: "comments" %>
     <%= will_paginate @comments %>
 
-    <%= link_to 'Edit', edit_product_path(@product) %> |
-    <%= link_to 'Back', products_path %>
 </div><!-- /container -->
 
 

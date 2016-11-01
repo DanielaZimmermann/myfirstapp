@@ -8,7 +8,9 @@
       <h1>OUR PRODUCTS</h1>
     </div>
     <div class="col-md-2 col-xs-2">
+    	<% if signed_in? && current_user.admin? %>
       <span class="btn-create"><%= link_to 'NEW PRODUCT', new_product_path %></span>
+      <% end %>
     </div>
 
     

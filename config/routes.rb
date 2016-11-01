@@ -20,7 +20,7 @@ Rails.application.routes.draw do
 
   post 'static_pages/thank_you'
   #devise_for :users
-  devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
+  devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}, :controllers => { :registrations => "user_registrations" }
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
