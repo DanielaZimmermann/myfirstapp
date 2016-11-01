@@ -27,26 +27,28 @@
     </div>
     <div class="row">
       <div class="col-md-6 col-xs-12">
-        <h3>User Ratings</h3>
         
-        <%#= image_tag(@product.image_url, class: "img-responsive detail") %>
-        <div class="col-md-4 col-xs-12">
-          <div class="container-rating">
-            <div class="rated" data-score="<%= @product.highest_rating_comment.rating %>"></div>
-              <h5>Good Product:</h5>
-              <p>"<%= @product.highest_rating_comment.body%>"</p>
-          </div>
-        </div><!-- col -->
-        <div class="col-md-4 col-xs-12">
-          <div class="container-rating">
-            <div class="rated" data-score="<%= @product.lowest_rating_comment.rating %>"></div>
-              <h5>Bad Product:</h5>
-              <p>"<%= @product.lowest_rating_comment.body%>"</p>
+          <h3>User Ratings</h3>
+          <% if !@product.comments.empty? %>
+          <%#= image_tag(@product.image_url, class: "img-responsive detail") %>
+          <div class="col-md-4 col-xs-12">
+            <div class="container-rating">
+              <div class="rated" data-score="<%= @product.highest_rating_comment.rating %>"></div>
+                <h5>Good Product:</h5>
+                <p>"<%= @product.highest_rating_comment.body%>"</p>
             </div>
-        </div><!-- col -->
-        <div class="col-md-4 col-xs-12">
-        <%= render partial: "new_comment" %>
-        </div><!-- col -->
+          </div><!-- col -->
+          <div class="col-md-4 col-xs-12">
+            <div class="container-rating">
+              <div class="rated" data-score="<%= @product.lowest_rating_comment.rating %>"></div>
+                <h5>Bad Product:</h5>
+                <p>"<%= @product.lowest_rating_comment.body%>"</p>
+              </div>
+          </div><!-- col -->
+         <% end %>
+          <div class="col-md-4 col-xs-12">
+          <%= render partial: "new_comment" %>
+          </div><!-- col -->
       </div><!-- col -->
       <div class="col-md-6 col-xs-12">
         <h3>Similar products</h3>
