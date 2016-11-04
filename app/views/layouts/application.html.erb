@@ -37,9 +37,9 @@
             <%= button_tag("Go", class: "btn btn-default btn-default-transparent") %>
           <% end %>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href=<%= products_path %>>PRODUCTS</a></li>
-            <li><a href=<%= static_pages_about_path %>>ABOUT</a></li>
-            <li><a href=<%= static_pages_contact_path %>>CONTACT</a></li>
+            <li><%= link_to('PRODUCTS', products_path) %></li>
+            <li><%= link_to('ABOUT', static_pages_about_path) %></li>
+            <li><%= link_to('CONTACT', static_pages_contact_path) %></li>
             <li>
             <% if user_signed_in? %>
               <%= link_to('LOGOUT', destroy_user_session_path, :method => :delete) %>
@@ -63,7 +63,7 @@
     <% end %>
     <%= yield %>
     <footer>
-    	<h5>&copy; 2016 Bike Frankfurt</h5>
+      <h5>&copy; 2016 Bike Frankfurt</h5>
     </footer>
   </body>
 </html>
