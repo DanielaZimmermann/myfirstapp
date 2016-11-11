@@ -35,6 +35,7 @@ group :development, :test do
   gem 'sqlite3'
   # rspec for bdd testing
   gem 'rspec-rails', '~> 3.5'
+  gem 'rails-controller-testing'
 
 end
 
