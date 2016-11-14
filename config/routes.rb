@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   get 'static_pages/landing_page'
 
   post 'static_pages/thank_you'
+  post 'payments/create'
   #devise_for :users
   devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}, :controllers => { :registrations => "user_registrations" }
 
