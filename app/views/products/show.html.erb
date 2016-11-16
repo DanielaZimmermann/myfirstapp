@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col-md-6 col-xs-12">
         <!--img src="https://unsplash.it/355x250/?bike" class="img-responsive" alt="portfolio project"-->
-        <%= image_tag(@product.image_url, class: "img-responsive detail") %>
+        <%= image_tag(@product.image_url, class: "img-responsive detail img-zoom", data_zoom_image: @product.image_url.sub('355x250', "810x500") ) %>
         <% if signed_in? && current_user.admin? %>
         <%= link_to 'Edit', edit_product_path(@product) %> |
         <% end %>
@@ -18,7 +18,7 @@
               <h5>Brand XYZ</h5>
               <h5><%= @product.price %> Eur</h5>
               <h5><%= @product.colour %></h5>
-              <div class="rated" data-score="<%= @product.average_rating %>"></div>
+              <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div>
               <%= form_tag "/payments/create" do %>
                 <%= hidden_field_tag(:product_id, @product.id) %>
                 <%= render partial: "shared/stripe_checkout_button" %>
