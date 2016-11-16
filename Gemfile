@@ -37,7 +37,6 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   gem 'rails-controller-testing'
   gem "factory_girl_rails", "~> 4.0"
-  gem 'stripe'
 end
 
 group :development do
@@ -58,3 +57,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem 'cancancan', '~> 1.10'
 gem 'will_paginate', '~> 3.1.1'
+gem 'stripe'
