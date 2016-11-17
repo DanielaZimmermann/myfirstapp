@@ -13,8 +13,9 @@
       <% end %>
     </div>
 
-    
+  <% cache(cache_key_for_products) do %>
   <%= render @products %>
+  <% end %>
 </div><!-- /container -->
 <br>
 

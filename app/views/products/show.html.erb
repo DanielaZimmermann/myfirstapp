@@ -2,6 +2,7 @@
 
 <div class="container product">
     <div class="row">
+      <% cache @product do %>
       <div class="col-md-6 col-xs-12">
         <!--img src="https://unsplash.it/355x250/?bike" class="img-responsive" alt="portfolio project"-->
         <%= image_tag(@product.image_url, class: "img-responsive detail img-zoom", data_zoom_image: @product.image_url.sub('355x250', "810x500") ) %>
@@ -28,6 +29,7 @@
           </div>
         </div>
       </div>
+      <% end %>
     </div>
     <div class="row">
       <div class="col-md-6 col-xs-12">
