@@ -14,7 +14,11 @@ $(document).on('turbolinks:load ajaxSuccess', function(){
     refreshRating();
 
     /* elevate zoom plugin*/
-    $(".img-zoom").elevateZoom({
-
-		});
+    $('.img-zoom').elevateZoom({
+        zoomType: "lens", 
+        lensShape: "round", 
+        lensSize: 200, 
+        lensFadeIn: 400, 
+        lensFadeOut: 500
+    });
 });
