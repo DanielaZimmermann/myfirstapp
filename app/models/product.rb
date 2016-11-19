@@ -24,9 +24,9 @@ class Product < ApplicationRecord
 		length = arr_products.count
 		new_arr = Array.new
 		# circle in array, push current and two following products
-		new_arr.push(arr_products.slice(ind+1 % length))
-		new_arr.push(arr_products.slice(ind+2 % length))
-		new_arr.push(arr_products.slice(ind+3 % length))
+		new_arr.push(arr_products.slice((ind+1) % length))
+		new_arr.push(arr_products.slice((ind+2) % length))
+		new_arr.push(arr_products.slice((ind+3) % length))
 
 		return new_arr
 
