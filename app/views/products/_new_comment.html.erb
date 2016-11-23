@@ -1,9 +1,11 @@
 <% if signed_in? %>
   <h4 class="add-comment">Add a review:</h4>
   <%= form_for([@product, @product.comments.build], remote: true) do |f| %>
-    <p>
-      <%= f.text_area :body %>
-    </p>
+    <div class="form-group">
+      <p>
+        <%= f.text_area :body, class: 'form-control' %>
+      </p>
+    </div>
     <p>
       <div class="rating"></div>
     </p>
