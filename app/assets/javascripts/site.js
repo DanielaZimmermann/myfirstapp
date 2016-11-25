@@ -10,6 +10,8 @@ var refreshRating = function() {
 
 
 $(document).on('turbolinks:load ajaxSuccess', function(){
+    $(".alert").delay(4000).fadeOut("slow");
+
     /* raty plugin */
     refreshRating();
 
@@ -22,3 +24,10 @@ $(document).on('turbolinks:load ajaxSuccess', function(){
         lensFadeOut: 500
     });
 });
+
+/*
+$(document).on('turbolinks:load', function(){
+  console.log($(".alert"));
+  $(".alert").delay(4000).fadeOut("slow");
+});
+*/

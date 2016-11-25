@@ -3,6 +3,7 @@ class ProductsController < ApplicationController
   before_action :authenticate_user!, :except => [:index, :show]
   load_and_authorize_resource
 
+
   # GET /products
   # GET /products.json
   def index
@@ -22,7 +23,7 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
-    @comments = @product.comments.order("created_at DESC").paginate(:page => params[:page], per_page: 3)
+    @comments =  @product.comments.order("created_at DESC").paginate(:page => params[:page], per_page: 3)
   end
 
 
@@ -85,4 +86,5 @@ class ProductsController < ApplicationController
     def product_params
       params.require(:product).permit(:name, :description, :image_url, :colour, :price)
     end
+
 end

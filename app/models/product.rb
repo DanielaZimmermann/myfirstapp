@@ -34,7 +34,6 @@ class Product < ApplicationRecord
 
 	def average_rating
 	  comments.average(:rating).to_f
-	  #comments.collect(&:rating).sum.to_f/comments.length if comments.length > 0
 	end
 
 end
